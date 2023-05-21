@@ -9,8 +9,9 @@ const btn = document.querySelectorAll('.btn');
 // use forEach to get the values of the buttons
 btn.forEach(function(btn){
     btn.addEventListener('click', function(e){
+        e.preventDefault();
         const style = e.currentTarget.classList;
-
+        
         if(style.contains('decrease')){
             count--;
         } else if (style.contains('increase')){
@@ -18,6 +19,7 @@ btn.forEach(function(btn){
         } else {
             count = 0;
         }
+
         value.textContent = count;
     });
 });
