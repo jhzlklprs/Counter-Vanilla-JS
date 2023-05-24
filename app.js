@@ -11,16 +11,14 @@ btn.forEach(function(btn){
     btn.addEventListener('click', function(e){
         e.preventDefault();
         const style = e.currentTarget.classList;
-        
+
         if(style.contains('decrease')){
             count--;
-        } else if (style.contains('increase')){
+        }else if (style.contains('increase')){
             count++;
         } else {
             count = 0;
         }
-
         value.textContent = count;
-    });
-});
-
+    })
+})
