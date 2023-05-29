@@ -9,7 +9,7 @@ const btn = document.querySelectorAll('.btn');
 // use forEach to get the values of the buttons
 btn.forEach(function(btn){
     btn.addEventListener('click', function(e){
-        e.preventDefault();
+        e.preventDefault(); // add event handler for click event
         const style = e.currentTarget.classList;
 
         if(style.contains('decrease')){
