@@ -12,7 +12,7 @@ btn.forEach(function(btn){
         e.preventDefault(); // add event handler for click event
         const style = e.currentTarget.classList;
 
-        if(style.contains('decrease')){
+        if(style.contains('decrease')){ //check if the style contains decrease
             count--;
         }else if (style.contains('increase')){
             count++;
